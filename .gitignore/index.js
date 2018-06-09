@@ -19,7 +19,7 @@ bot.on('message', message => {
   }
 
   if (message.content === prefix + 'help') {
-    message.channel.send("```Il n'éxiste que quelques commandes: \n  !help : Page d'aide qui t'affiche les commandes. \n  !guide : Te redirige vers le guide officiel de la RYH Overwatch Cup. \n  !ping : Permet de voir si je suis connecté. \n  !tm : Affiche le nombre de membres que compatbilise le serveur \n  !om : Affiche le nombre de membres connectés sur le serveur```")
+    message.channel.send("```Il n'éxiste que quelques commandes: \n  !help : Page d'aide qui t'affiche les commandes. \n  !guide : Te redirige vers le guide officiel de la RYH Overwatch Cup. \n  !ping : Permet de voir si je suis connecté. \n  !tm : Affiche le nombre de membres que compatbilise le serveur. \n  !om : Affiche le nombre de membres connectés sur le serveur.```")
   }
 
   if (message.content === prefix + 'tm') {
