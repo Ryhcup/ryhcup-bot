@@ -10,6 +10,7 @@ bot.on('ready', function () {
 
 bot.on('guildCreate', guild => {
   console.log(`Je viens de rejoinde ${guild.name}`); // Dis à la console que le bot viens de rejoindre tel serveur
+  member.guild.channels.get("435833840800628737").send(`Hey @everyone ! Je suis ROC™, le bot de la Ryh Overwatch Cup. J'ai été conçue par <@219024646253707264> dans le but de rendre le Discord plus confortable. Merci d'utiliser mes commandes uniquement dans le salon <#455016421240602625>. Passez une agréable journée ;)`); // Le bot se présente
 });
 
 bot.on('message', message => {
