@@ -1,10 +1,7 @@
 {
-  "name": "ryhcup-bot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "author": "Pyrrha"
+  "name": "",
   "dependencies": {
     "discord.js": "^11.3.2"
   },
+  "version": ""
 }
