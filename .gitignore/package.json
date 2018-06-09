@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "author": "Pyrrha"
-  "dependencies": {
+  "dependencies" {
     "discord.js": "^11.3.2"
   },
 }
