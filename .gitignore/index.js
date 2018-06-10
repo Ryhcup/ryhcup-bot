@@ -14,6 +14,8 @@ bot.on('guildCreate', guild => {
 })
 
 bot.on('message', message => {
+  if (!message.guild) return; //ignore les DM
+  
   if (message.content === prefix + 'ping') {
     message.channel.send('Pong ! :ping_pong:') // Répond au ping d'un utilisateur par Pong !
   }
@@ -46,5 +48,6 @@ bot.on('guildMemberAdd', member => {
   var role = member.guild.roles.find('name', 'Prout');
   member.addRole(role)
 })
+
 
 
