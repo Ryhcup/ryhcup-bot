@@ -19,7 +19,7 @@ bot.on('message', message => {
   }
 
   if (message.content === prefix + 'help') {
-    message.channel.send("```Il n'éxiste que quelques commandes: \n  !help : Page d'aide qui t'affiche les commandes. \n  !guide : Te redirige vers le guide officiel de la RYH Overwatch Cup. \n  !ping : Permet de voir si je suis connecté. \n  !tm : Affiche le nombre de membres que compatbilise le serveur. \n  !reg : Affiche les équipes enregistrées pour l'édition 2018.```")
+    message.channel.send("```Il n'éxiste que quelques commandes: \n  !help : Page d'aide qui t'affiche les commandes. \n  !guide : Te redirige vers le guide officiel de la RYH Overwatch Cup. \n  !ping : Permet de voir si je suis connecté. \n  !tm : Affiche le nombre de membres que compatbilise le serveur. \n  !reg : Affiche les équipes enregistrées pour l'édition 2018. \n !assign al : Assigne le rôle d'agent libre.```")
   }
 
   if (message.content === prefix + 'tm') {
@@ -33,6 +33,11 @@ bot.on('message', message => {
   if (message.content === prefix + 'reg') {
     message.channel.send("Il y a actuellement 2 équipes d'enregistrés:\n\n`OVERWATCH GHOST INTER. (4 Joueurs)`\n`JJ'Øzz (6 Joueurs)`\n\n\nIl y a actuellement 2 agents libres enregistrés.")
     }
+
+  if (message.content === prefix + 'assign al') {
+    var role = message.member.guild.roles.find('name', 'Agent Libre');
+    message.member.addRole(role)
+  }
 })
 
 bot.on('guildMemberAdd', member => {
@@ -41,3 +46,5 @@ bot.on('guildMemberAdd', member => {
   var role = member.guild.roles.find('name', 'Prout');
   member.addRole(role)
 })
+
+
