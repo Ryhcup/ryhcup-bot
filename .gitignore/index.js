@@ -10,7 +10,7 @@ bot.on('ready', function () {
 
 bot.on('guildCreate', guild => {
   console.log(`Je viens de rejoinde ${guild.name}`); // Dis à la console que le bot viens de rejoindre tel serveur
-  guild.channels.get("435833840800628737").send(`Hey @everyone ! Je suis ROC™, le bot de la Ryh Overwatch Cup.\nJ'ai été conçue par <@219024646253707264> dans le but de rendre le Discord plus confortable.\nMerci d'utiliser mes commandes uniquement dans le salon <#455016421240602625>.\nPassez une agréable journée ;)`); // Le bot se présente
+  guild.channels.get("295264973532299265").send(`Hey @everyone ! Je suis ROC™, le bot de la Ryh Overwatch Cup.\nJ'ai été conçue par <@219024646253707264> dans le but de rendre le Discord plus confortable.\nMerci d'utiliser mes commandes uniquement dans le salon <#455015730359042048>.\nPassez une agréable journée/soirée ;)`); // Le bot se présente
 })
 
 bot.on('message', message => {
@@ -25,7 +25,7 @@ bot.on('message', message => {
   }
 
   if (message.content === prefix + 'tm') {
-    message.channel.send(`Il y as ${message.guild.memberCount} membres sur le serveur`);
+    message.channel.send(`Il y a ${message.guild.memberCount} membres sur le serveur. N'hésitez pas à inviter du monde !`);
   }
 
   if (message.content === prefix + 'guide') {
@@ -44,10 +44,7 @@ bot.on('message', message => {
 
 bot.on('guildMemberAdd', member => {
   console.log('User ' + member.displayName + ' as rejoint le serveur ROC'); // Dit à la console qu'un membre à rejoint
-  member.guild.channels.get("435833840800628737").send(`Bienvenue sur le serveur de la RYH Overwatch Cup ${member} nous te conseillons vivement de lire le règlement et d'aller dans le channel #informations pour te renseigner sur la compétition`); // Envoie le message de bienvenue
-  var role = member.guild.roles.find('name', 'Prout');
+  member.guild.channels.get("295264973532299265").send(`Bienvenue sur le serveur de la RYH Overwatch Cup ${member} nous te conseillons vivement de lire le règlement et d'aller dans le channel <#422059507347095552> pour te renseigner sur la compétition`); // Envoie le message de bienvenue
+  var role = member.guild.roles.find('name', 'Membre');
   member.addRole(role)
 })
-
-
-
