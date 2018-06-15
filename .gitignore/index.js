@@ -33,7 +33,7 @@ bot.on('message', message => {
   }
 
   if (message.content === prefix + 'reg') {
-    message.channel.send("Il y a actuellement 2 équipes d'enregistrés:\n\n`OVERWATCH GHOST INTER. (4 Joueurs)`\n`JJ'Øzz (6 Joueurs)`\n`WeAreSalt (7 Joueurs)`\n\n\nIl y a actuellement 2 agents libres enregistrés.")
+    message.channel.send("Il y a actuellement 3 équipes d'enregistrés:\n\n`OVERWATCH GHOST INTER. (4 Joueurs)`\n`JJ'Øzz (6 Joueurs)`\n`WeAreSalt (7 Joueurs)`\n\n\nIl y a actuellement 2 agents libres enregistrés.")
     }
 
   if (message.content === prefix + 'assign al') {
